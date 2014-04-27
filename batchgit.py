@@ -58,6 +58,7 @@ if args.cmd == 'status':
         except Exception:
             # not connected to the network
             fetch_fail = True
+            br = '*' + br
             pass
         unpulled_commits = list(repo.iter_commits('%s..%s@{u}' % (br, br)))
         if len(unpulled_commits) > 0:
@@ -72,7 +73,7 @@ if args.cmd == 'status':
 
     # let the client know if things didn't go well
     if fetch_fail is True:
-        print("\nUnable to fetch some repositories...")
+        print("\n*unable to fetch remote repositories...")
 else:
     print('Command "%s%s%s" not supported.' % (
         Fore.CYAN, args.cmd, Fore.RESET))
