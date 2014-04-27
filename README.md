@@ -8,8 +8,8 @@ Runs git commands on multiple repositories.
 git clone https://code.spacex.corp/joshua.villbrandt/batchgit.git
 cd batchgit/
 sudo pip install -r requirements.txt
-echo python ${PWD}/batchgit.py status > /usr/local/bin/status
-chmod a+x /usr/local/bin/status
+sudo sh -c 'echo python ${PWD}/batchgit.py status > /usr/local/bin/status'
+sudo chmod a+x /usr/local/bin/status
 ```
 
 ## Usage
