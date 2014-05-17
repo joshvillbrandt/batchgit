@@ -5,7 +5,7 @@ Runs git commands on multiple repositories.
 ## Installation
 
 ```bash
-git clone https://code.spacex.corp/joshua.villbrandt/batchgit.git
+git clone https://github.com/joshvillbrandt/batchgit.git
 cd batchgit/
 sudo pip install -r requirements.txt
 sudo sh -c 'echo python ${PWD}/batchgit.py status > /usr/local/bin/status'
